@@ -1,0 +1,30 @@
+id <- not informative (metadata)
+loan_amnt <- use
+funded_amnt <- metadata
+int_rate <- use
+grade <- as.factor // A-G not much variation between last 3 features, so make a class E (E/F/G) 
+home_ownership <- use
+emp_length <- analyse this (self-employed? or smt else/ relation with emp_title)
+annual_inc	<- use 
+verification_status <- use
+loan_status	 <- /dependent variable (prediction target)
+dti	<- take in account the annual_inc effect (and loan_amt?) 
+delinq_2yrs	<- use, has a max of 42 
+open_acc	<- use (check links with other info we have such as dti) 
+pub_rec	 <- use
+
+make
+fico_range_mean	<- get mean of fico_range_low and fico_range_high
+
+total_paymnt	<- metadata
+recoveries	<- drop / dataleakage (metadata)
+funded_amnt_inv	<- use ??? write email
+installment	<- do we know if the loan is issued?
+sub_grade	<- x1 is best, x5 is worst subgrade / be consistent with grade (getting rid of class e-g)
+emp_title	<- drop probably
+purpose	<- keep
+title	<- drop
+addr_state <- make categories such as north-east mid-west mid-south look into how they work  	
+zip_code	<- drop (metadata)
+earliest_cr_line_year	<- use (gives indication about age)
+earliest_cr_line_year	<- use 

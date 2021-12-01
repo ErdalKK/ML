@@ -28,3 +28,11 @@ addr_state <- make categories such as north-east mid-west mid-south look into ho
 zip_code	<- drop (metadata)
 earliest_cr_line_year	<- use (gives indication about age)
 earliest_cr_line_year	<- use 
+
+
+
+TO-DO:
+emp_lengths analysis needs to be extended (NAs), make the graph better
+
+
+
